@@ -151,3 +151,48 @@ h3.course-title {
     padding: 5px 10px;
     border-radius: 20px;
 }
+
+/* Media queries */
+
+/* Mobile Devices */
+@media only screen and (max-width:688px) {
+    .players{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .player{
+        flex-direction: column;
+    }
+    .container{
+        width: 100%;
+    }
+    .blogs {
+        grid-template-columns: repeat(1, 1fr);
+        padding:10px;
+    }
+    .blog-title {
+        font-size: 18px;
+    }
+    .main-menu nav ul li a {
+        padding: 0px 5px;
+    }
+    h2.section-title {
+        text-align: center;
+        color: #562EFF;
+        font-size: 24px;
+    }
+    .courses {
+        flex-direction: column;
+    }
+}
+/* Tablet Devices */
+@media only screen and (min-width:688px) and (max-width:992px) {
+    .players{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .player, .blog {
+        flex-direction: column;
+    }
+    .blogs {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
