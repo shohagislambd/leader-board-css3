@@ -117,6 +117,7 @@ hr{
 /* Latest courses */
 .courses{
     display: flex;
+    grid-template-columns: repeat(3,1fr);
     grid-column-gap: 23px;
 }
 .course-info{
@@ -180,9 +181,9 @@ h3.course-title {
         color: #562EFF;
         font-size: 24px;
     }
-    .courses {
+    /* .courses {
         flex-direction: column;
-    }
+    } */
 }
 /* Tablet Devices */
 @media only screen and (min-width:688px) and (max-width:992px) {
@@ -193,6 +194,9 @@ h3.course-title {
         flex-direction: column;
     }
     .blogs {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .courses{
         grid-template-columns: repeat(2, 1fr);
     }
 }
